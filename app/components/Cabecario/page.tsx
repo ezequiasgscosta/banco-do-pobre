@@ -2,7 +2,14 @@
 
 import { useState } from 'react'
 
-export default function Cabecario () {
+export default function Cabecario({
+    olhoAbertoEstado,
+    setOlhoAbertoEstado
+}: {
+    olhoAbertoEstado: boolean
+    setOlhoAbertoEstado: React.Dispatch<React.SetStateAction<boolean>>
+}){
+
    const  sexualidade : number= 1
    const homem = 'https://img.icons8.com/?size=100&id=11178&format=png&color=fffecb'
    const mulher = 'https://img.icons8.com/?size=100&id=11165&format=png&color=fffecb'
@@ -11,7 +18,6 @@ export default function Cabecario () {
    const olhoFechado = 'https://img.icons8.com/?size=100&id=118858&format=png&color=fffecb'
    const olhoAberto = 'https://img.icons8.com/?size=100&id=122974&format=png&color=000000'
  
-     const [olhoAbertoEstado, setOlhoAbertoEstado] = useState<boolean>(false)
   const AbrirFecharOlho = () => {
         setOlhoAbertoEstado((estadoAtual) => !estadoAtual)
   }
@@ -21,9 +27,9 @@ export default function Cabecario () {
 
   const mensagem = 'https://img.icons8.com/?size=100&id=2FxDGcmY6mE9&format=png&color=fffecb'
   
-   
+   const usuario = 'Antonio Carlos'
    return (
-        <div className="bg-laranja w-full h-[16dvh] relative stick ">
+        <div className="bg-laranja w-full h-[14dvh] relative stick ">
            
             <div className="w-[100dvw] h-1/2 flex">
 
@@ -66,8 +72,8 @@ export default function Cabecario () {
                
             </div>
 
-            <div className="w-full h-1/2 flex  items-center" >
-                <h1 className='ml-5 text-branco'>Olá, Antonio</h1>
+            <div className="w-[100dvw] h-1/2 flex  items-center" >
+                <h1 className='ml-5 text-branco text-[3dvh]'>Olá, Antonio</h1>
             </div>
         </div>
     )
