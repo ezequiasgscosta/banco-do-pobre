@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+    --quase-cinza:#423E3B;
+  --laranja:#ff2e00;
+  --amarelo-fraco:#fea82f;
+  --cbranco:#fffecb;
+  --roxo:#5448c8;
+}
+
+
+
+@theme {
+  --color-quase-cinza:#423E3B;
+  --color-laranja:#ff2e00;
+  --color-amarelo-fraco:#fea82f;
+  --color-branco:#fffecb;
+  --color-roxo:#5448c8;
+}
+
+.botao {
+  background-color: var(--laranja);
+}
