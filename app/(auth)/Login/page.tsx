@@ -1,4 +1,4 @@
-"use client"
+/*"use client"
 
 export default function Login() {
     const [email,setEmail] = useState("")
@@ -19,4 +19,4 @@ export default function Login() {
             <button onClick={entrar}>Entrar</button>
         </div>
     )
-}
+}*/
