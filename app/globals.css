@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,8 +20,43 @@
   --color-amarelo-fraco:#fea82f;
   --color-branco:#fffecb;
   --color-roxo:#5448c8;
+
 }
 
 .botao {
   background-color: var(--laranja);
+}
+
+.AtalhosPai {
+
+  width: 18%;
+  max-width: 130px;
+  margin-left:4%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  transition:0.5s ease;
+}
+
+.AtalhosPai:hover {
+   width: 20%;
+  max-width: 135px;
+
+}
+
+.AtalhosFilho {
+  background-color: var(--quase-cinza);
+  border-radius: 50%;
+  width:100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  transition:0.2s ease-in-out;
+}
+
+.AtalhosFilho:hover {
+   background-color: var(--roxo);
+  
 }

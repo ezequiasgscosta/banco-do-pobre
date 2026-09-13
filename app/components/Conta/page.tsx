@@ -10,7 +10,7 @@ export default function Conta({
 
     return (
         <div className="w-full h-[15dvh]  flex flex-col justify-around 
-                 text-[2dvh] font-bold border-b 
+                 text-[2dvh] font-bold 
             ">
             <h1 className="ml-5 ">Conta</h1>
 
