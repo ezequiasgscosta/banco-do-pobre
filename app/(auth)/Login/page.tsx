@@ -1,11 +1,21 @@
-/*"use client"
+"use client"
+import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 export default function Login() {
+    const router = useRouter()
     const [email,setEmail] = useState("")
     const [senha,setSenha] = useState("")
 
-    const entrar = () => setEmail === email && setSenha === senha ? src="./page.tsx"  ! alert("erro")
-   
+    const entrar = () => {
+        if (email === "biel@gmail.com" && senha === "123") {
+             router.push("/") 
+        }else if (email === "" || senha === "") {
+                alert("preencha todos os dados")
+        }
+    }   
+  
+
     return (
         <div className="w-full h-screen text-center flex flex-col items-center gap-6">
             <h1>Login</h1>
@@ -19,4 +29,4 @@ export default function Login() {
             <button onClick={entrar}>Entrar</button>
         </div>
     )
-}*/
+}
